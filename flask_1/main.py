@@ -8,7 +8,7 @@ print("created !!")
 cur=con.cursor()
 cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("perfect blue",15000) )
 cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("Gryffindor",14900) )
-cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("InfosecIITR",14500) )
+cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("InfoSecIITR",14500) )
 cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("ALLES!",14100) )
 cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("Doxepticons",13500) )
 cur.execute("INSERT INTO leaders (team,score) VALUES (?,?)",("SDS LABS",13000) )
@@ -37,4 +37,4 @@ def leaderboard():
     
 if __name__ == '__main__':
     app.run(debug=True)
-#payload="I1";UPDATE leaders SET score = 999999 where team = 'I1'
+#payload="a";UPDATE leaders SET score = 9999999 where team = 'InfoSecIITR'
