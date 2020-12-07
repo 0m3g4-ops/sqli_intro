@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Flask parent file</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">    
+    </head>
+    <body>
+        
+        <form action="{{ url_for('leaderboard') }}" method="POST">
+            <h3>ROAD TO SCOREBOARD</h3>
+            <br>
+            PAYLOAD<br>
+            <input type= "text" name= "payload" /><br>
+            <input type= "submit" value = "submit" /><br>
+        </form>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
